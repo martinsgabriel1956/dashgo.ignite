@@ -46,7 +46,7 @@ export function useUsers(currentPage: number) {
     ["users", currentPage],
     () => getUsers(currentPage),   
     {
-      staleTime: 1000 * 5, // 5 seconds past
+      staleTime: 1000 * 60 * 10 // 10 minutos
     }
   );
 }
